@@ -1,0 +1,57 @@
+.playerList {
+    position:relative;
+    padding:10px;
+    background-color:#FFF;
+    box-shadow:0px 2px 10px rgba(0,0,0,.2);
+    transition:all 0.1s;
+    &.empty {
+        min-width:0px;
+        width:0px;
+        padding:0px;
+        overflow:hidden;
+    }
+    & .title {
+        position:absolute;
+        bottom:0px;
+        font-family:'Roboto Mono';
+        padding:5px;
+        font-size:12px;
+        color:grey;
+        margin-bottom:10px;
+        & b {
+            color:#FF5271;
+        }
+    }
+    & .player {
+        padding:5px;
+        align-items: center;
+        &:hover {
+            background-color:rgb(240,240,240);
+            cursor:pointer;
+        }
+        & .head {
+            width:25px;
+        }
+        & .name {
+            margin-left:10px;
+            font-family: 'Roboto Mono';
+            font-size:12px;
+            width:100px;
+        }
+        & .action {
+            display: flex;
+            align-items: center;
+            padding:5px;
+            border-radius:2px;
+            & .icon {
+                width:15px;
+            }
+            &:hover {
+                background-color:#E0E0E0;
+            }
+            &:active {
+                background-color:#C0C0C0;
+            }
+        }
+    }
+}

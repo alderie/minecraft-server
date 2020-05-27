@@ -1,0 +1,105 @@
+.flex-row {
+    display:flex;
+    flex-flow:row;
+}
+
+.flex-column {
+    display:flex;
+    flex-flow:column;
+}
+
+.app {
+    height:100vh;
+    overflow:hidden;
+}
+
+.content {
+    flex-grow:1;
+    min-height:0;
+}
+
+.header {
+    align-items: center;
+    & .serverInfo {
+        padding:20px;
+        flex-grow:1;
+        padding-left:40px;
+        -webkit-app-region:drag;
+    }
+    & .version, & .title {
+        
+        font-family:'Roboto Mono';
+        font-size:18px;
+        padding:10px 0px;
+    }
+    & .version {
+        width:200px;
+        color:transparentize(#131313, 0.4);
+        margin-left:10px;
+    }
+    & .drag {
+        width:15px;
+        display:flex;
+        align-items: center;
+        margin-right:10px;
+        padding:4px 10px;
+        -webkit-app-region: drag;
+        & .icon {
+            width:20px;
+        }
+    }
+    & .controls {
+        padding:20px;
+        padding-right:40px;
+        align-items: center;
+        margin-left:auto;
+        & .address {
+            user-select: none;
+            font-family:'Roboto Mono';
+            padding:10px 15px;
+            margin-right:20px;
+            font-weight:normal;
+            color:#868686;
+            border-radius:3px;
+            &:hover {
+                cursor:pointer;
+                background-color:rgb(248, 248, 248);
+            }
+        }
+    }
+}
+
+.drag-region {
+    flex-grow:1;
+    -webkit-app-region:drag;
+}
+
+.notification {
+    & .statusBar {
+        padding:8px;
+        margin-left:auto;
+    }
+}
+
+.interface {
+    flex-grow:1;
+    height:0;
+}
+
+.app-control {
+    & .group {
+        margin-left:auto;
+    }
+    & .action {
+        padding:10px;
+        display:flex;
+        align-items: center;
+        &:hover {
+            background-color:#F0F0F0;
+            cursor:pointer;
+        }
+        & .icon {
+            width:20px;
+        }
+    }
+}

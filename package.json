@@ -1,0 +1,44 @@
+{
+  "name": "minecraft-server",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "foreman": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "react-scripts": "^3.4.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.0.0",
+    "download": "^8.0.0",
+    "nat-api": "^0.3.0",
+    "p5": "^1.0.0",
+    "pidusage": "^2.0.18",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "systeminformation": "^4.25.1"
+  },
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "nf start -p 3000"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
