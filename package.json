@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "electron": "^8.2.5",
-    "foreman": "^2.0.0",
+    "foreman": ">=3.0.1",
     "node-sass": "^4.14.1",
     "react-scripts": "^3.4.1"
   },
